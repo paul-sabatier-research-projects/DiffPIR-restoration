@@ -1,0 +1,15 @@
+training:
+  batch_size: 8
+  learning_rate: 1e-4  # Learning rate plus faible pour le fine-tuning
+  num_epochs: 100
+  save_interval: 1000
+  eval_interval: 100
+
+model:
+  model_name: "diffusion_ffhq_10m"
+  pretrained_path: "model_zoo/diffusion_ffhq_10m.pt"
+
+data:
+  train_data_dir: "trainsets/dataset_xray_50"
+  image_size: 256
+  channels: 3
